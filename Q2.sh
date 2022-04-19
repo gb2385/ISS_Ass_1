@@ -1,0 +1,1 @@
+awk '{if (NF != 0) split($0,a," ~"); print a[2] " once said, " "\""a[1]"\""  > "speech.txt"}' quotes.txt

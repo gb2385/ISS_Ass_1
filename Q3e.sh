@@ -1,0 +1,1 @@
+sed -e  's/[^A-Za-z]/ /g' in.txt | tr ' ' '\n' | grep -v '^$'| sort | uniq -cd
